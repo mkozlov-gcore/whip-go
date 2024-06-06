@@ -14,7 +14,7 @@ go build
 ## Running
 
 ```
-./whip-go -v VIDEO_SOURCE -a AUDIO_SOURCE -vc VIDEO_CODEC -t TOKEN -c CLIENTS_COUNT http://localhost:1234/stream_{N}/whip
+./whip-go -v VIDEO_SOURCE -a AUDIO_SOURCE -vc VIDEO_CODEC -t TOKEN -b BITRATE_BPS -c CLIENTS_COUNT http://localhost:1234/stream_{N}/whip
 ```
 
 `{N}` - would be replaced with [0..CLIENTS_COUNT]
