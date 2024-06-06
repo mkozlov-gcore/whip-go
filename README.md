@@ -14,8 +14,10 @@ go build
 ## Running
 
 ```
-./whip-go -v VIDEO_SOURCE -a AUDIO_SOURCE -vc VIDEO_CODEC -t TOKEN WHIP_ENDPOINT_URL
+./whip-go -v VIDEO_SOURCE -a AUDIO_SOURCE -vc VIDEO_CODEC -t TOKEN -c CLIENTS_COUNT http://localhost:1234/stream_{N}/whip
 ```
+
+`{N}` - would be replaced with [0..CLIENTS_COUNT]
 
 The supported sources are either "screen" for screensharing, "test" for a test pattern or the name of a file (f.e. "/dev/stdin") to ready raw YUV420 samples from.
 
